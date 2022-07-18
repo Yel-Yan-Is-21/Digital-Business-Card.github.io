@@ -1,0 +1,119 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+/* ?---FOR REUSABLE CLASSES--- */
+.container{
+  padding: 1rem 2rem;
+}
+.text-center{
+  text-align: center;
+}
+/* ?---FOR APP STYLING--- */
+.App{
+  background: var(--card-bg);
+  margin-top: 4rem;
+}
+/* ?---FOR PORTFOLIO IMAGE STYLING--- */
+.hero-img{
+  max-width: 20rem;
+}
+.main-image{
+  background-image: url(./img.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  object-fit: cover;
+
+  max-width: 24rem;
+  width: 24rem;
+  aspect-ratio: 1;
+}
+/* ?---FOR MAIN CONTENT STYLING--- */
+.main-content{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+/*
+*--Heading--
+*/
+.heading{
+  display: grid;
+  row-gap: 0.1rem;
+}
+.heading h1{
+  font-weight: var(--fw-bold);
+}
+.heading h3{
+  color: var(--clr-accent);
+}
+.heading h3,
+.heading h5{
+  font-weight: var(--fw-normal);
+}
+/* 
+*--button group--
+*/
+.button-group{
+  display: flex;
+  column-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+}
+.email{
+  color: var(--clr-text);
+  background-color: var(--clr-white);
+  width: 7.5rem;
+  max-width: 7.5rem;
+}
+.linkedin{
+  background-color: var(--clr-linkedin);
+  color: var(--clr-white);
+  width: 7.5rem;
+  max-width: 7.5rem;
+}
+a{
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+}
+a:hover,
+a:focus{
+  opacity: 0.75;
+}
+/*
+*--Content--
+*/
+.content{
+  display: grid;
+  row-gap: 1rem;
+}
+
+/* ?---FOOTER--- */
+.footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background-color: var(--clr-footer);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+
+  padding: 1.2rem 0;
+}
+.footer > *{
+  font-size: 2rem;
+  cursor: pointer;
+  color: hsl(254, 6%, 58%);
+}
+.footer > *:hover,
+.footer > *:focus{
+  opacity : 0.75;
+}
